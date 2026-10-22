@@ -1,0 +1,14 @@
+{
+  "asset_class": "Hotshot Trucking Expedited Freight Spreadsheet",
+  "build_parameters": {
+    "macro_free": true,
+    "responsive_scale_target": "85%",
+    "canvas_base": "Matte-Black Theme"
+  },
+  "operational_matrices": [
+    "hotshot_deadhead_calculators",
+    "load_tracking_spreadsheets",
+    "operational_breakdown_lines",
+    "ifta_fuel_trackers"
+  ]
+}
