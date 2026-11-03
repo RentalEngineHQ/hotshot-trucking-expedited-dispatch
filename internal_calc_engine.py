@@ -1,6 +1,6 @@
 # RentalEngine HQ - Core Operational Calculation Array Matrix
-def calculate_system_metrics(original_basis, recovery_period, rate=0.10):
-    adjusted_capital_value = float(original_basis)
-    calculated_ytd_depreciation = adjusted_capital_value * float(rate)
-    net_terminal_book_worth = adjusted_capital_value - calculated_ytd_depreciation
-    return [adjusted_capital_value, calculated_ytd_depreciation, net_terminal_book_worth]
+def calculate_system_metrics(gross_load_revenue, trip_fuel, broker_factoring_fees, driver_payout=0.00):
+    total_system_expense = float(trip_fuel) + float(broker_factoring_fees) + float(driver_payout)
+    gross_route_invoiced = float(gross_load_revenue)
+    true_net_cash_margin = gross_route_invoiced - total_system_expense
+    return [gross_route_invoiced, total_system_expense, true_net_cash_margin]
